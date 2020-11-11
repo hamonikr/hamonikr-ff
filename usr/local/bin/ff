@@ -46,7 +46,23 @@ function exitScript(){
 };
 # trap exitScript SIGINT SIGTERM # set trap
 
-export FZF_DEFAULT_OPTS="--ansi --layout=reverse --preview-window 'right:60%' --preview 'batcat --color=always --style=header,grid --line-range :300 {}'"
+#FZF_DEFAULT_OPTS="--ansi --layout=reverse --preview-window 'right:60%' --preview 'batcat --color=always --style=header,grid --line-range :300 {}'" 
+FZF_DEFAULT_OPTS="--border\
+  --height 80%\
+  --extended\
+  --ansi\
+  --reverse\
+  --cycle\
+  --header 'HamoniKR Find in File'\
+  --bind 'f1:execute(cat {} | xclip -selection clipboard)'\
+  --bind 'ctrl-y:execute-silent(cat {} | xclip -selection clipboard)+abort'\
+  --bind 'alt-p:preview-up,alt-n:preview-down'\
+  --bind 'ctrl-u:half-page-up,ctrl-d:half-page-down'\
+  --bind '?:toggle-preview,alt-w:toggle-preview-wrap'\
+  --bind 'f2:execute(vim {} >/dev/tty </dev/tty),alt-v:execute(vim {} >/dev/tty </dev/tty)'\
+  --preview \"batcat --theme='ansi-dark' --style=numbers --color=always {}\""
+
+export FZF_DEFAULT_OPTS
 
 if [[ "X$1" != "X" ]] ; then
     case $1 in
@@ -55,10 +71,12 @@ if [[ "X$1" != "X" ]] ; then
             exit 0;
             ;;
         *)
-            find $1 -type f | vim -o $(fzf)
+            # find $1 -type f | vim -o $(fzf)
+            find $1 -type f | fzf
     esac
 else
-    vim -o $(fzf)
+    # vim -o $(fzf)
+    fzf
 fi
 
 # trap exitScript 0 1 2 15
