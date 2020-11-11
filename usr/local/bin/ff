@@ -21,6 +21,7 @@
 # dependencies
 #       fzf
 #       bat
+#       vim
 
 # Usage:
 # ff <target-dir>

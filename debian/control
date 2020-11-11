@@ -9,6 +9,7 @@ Package: hamonikr-ff
 Architecture: all
 Depends: bat,
          fzf,
+         vim,         
          ${misc:Depends},
 Description: Terminal file finder tool for HamoniKR
  직관적인 터미널 파일 검색 및 편집 프로그램.
