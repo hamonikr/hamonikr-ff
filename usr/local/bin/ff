@@ -76,7 +76,7 @@ if [[ "X$1" != "X" ]] ; then
     esac
 else
     # vim -o $(fzf)
-    fzf
+    find $1 -type f | fzf
 fi
 
 # trap exitScript 0 1 2 15

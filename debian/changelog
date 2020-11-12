@@ -1,3 +1,10 @@
+hamonikr-ff (1.0.4) jin; urgency=medium
+
+  * Update usr/local/bin/ff
+   - Add all file list for default mode
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 12 Nov 2020 19:07:32 +0900
+
 hamonikr-ff (1.0.3) jin; urgency=medium
 
   * Update usr/local/bin/ff
