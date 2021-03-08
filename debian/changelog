@@ -1,3 +1,10 @@
+hamonikr-ff (2.0.0) entjin; urgency=medium
+
+  * Update usr/local/bin/ff
+   - Choose bat or cat
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 08 Mar 2021 14:08:35 +0900
+
 hamonikr-ff (1.0.4) jin; urgency=medium
 
   * Update usr/local/bin/ff
