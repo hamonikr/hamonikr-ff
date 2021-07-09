@@ -1,3 +1,9 @@
+hamonikr-ff (2.0.1) pro; urgency=medium
+
+  * Deploy for HamoniKR Server PRO 2.1
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 09 Jul 2021 18:54:51 +0900
+
 hamonikr-ff (2.0.0) entjin; urgency=medium
 
   * Update usr/local/bin/ff

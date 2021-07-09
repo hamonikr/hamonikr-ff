@@ -29,7 +29,7 @@
 
 function print_help(){
 	echo
-	echo "hamonikr terminal file finder v1.0"        
+	echo "HamoniKR Terminal File Finder v1.0"        
 	echo    
 	echo "Usage"
 	echo "------"	
