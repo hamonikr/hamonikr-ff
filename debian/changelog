@@ -1,3 +1,10 @@
+hamonikr-ff (2.1.0) jammy; urgency=medium
+
+  * Release for Ubuntu 22.04
+   - Changed bat theme to 'ansi' : Theme 'ansi-dark' is deprecated. 
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 02 Oct 2022 14:24:07 +0900
+ 
 hamonikr-ff (2.0.1) pro; urgency=medium
 
   * Deploy for HamoniKR Server PRO 2.1
