@@ -1,3 +1,10 @@
+hamonikr-ff (2.1.0+h1) unstable; urgency=medium
+
+  * Release for bookworm arm64
+   - No Change
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 12 Jul 2024 15:18:27 +0900
+
 hamonikr-ff (2.1.0) jammy; urgency=medium
 
   * Release for Ubuntu 22.04
